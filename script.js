@@ -33,17 +33,12 @@ const personalMovieDB = {
     peicat: false
 };
 
-const ferst = {
-   a: prompt('Один из последних просмотренных фильмов?', ''),
-   b: +prompt('На сколько оцените его?', '')
-};
+const a = prompt('Один из последних просмотренных фильмов?', ''),
+      b = prompt('На сколько оцените его?', ''),
+      c = prompt('Один из последних просмотренных фильмов?', ''),
+      d = prompt('На сколько оцените его?', '');
 
-const second = {
-    a: prompt('Один из последних просмотренных фильмов?', ''),
-    b: prompt('На сколько оцените его?', '')
-};
-
-personalMovieDB.movies[ferst.a] = ferst.b;
-personalMovieDB.movies[second.a] = second.b;
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 
 console.log(personalMovieDB);
